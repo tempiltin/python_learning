@@ -1,7 +1,9 @@
-# Random password generator
-import random
-import string
-def generate_password(length=12):
-    characters = string.ascii_letters + string.digits + string.punctuation
-    return ''.join(random.choice(characters) for _ in range(length))
-print(generate_password())
+# Prime number checker
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+print(is_prime(29))
