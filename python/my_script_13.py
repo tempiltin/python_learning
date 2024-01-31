@@ -1,5 +1,8 @@
-# Matrix multiplication
-import numpy as np
-A = np.array([[1, 2], [3, 4]])
-B = np.array([[5, 6], [7, 8]])
-print(np.dot(A, B))
+# Fibonacci function
+def fibonacci(n):
+    a, b = 0, 1
+    for _ in range(n):
+        print(a, end=" ")
+        a, b = b, a + b
+n = 10
+fibonacci(n)
