@@ -1,5 +1,9 @@
-# Matrix multiplication
-import numpy as np
-A = np.array([[1, 2], [3, 4]])
-B = np.array([[5, 6], [7, 8]])
-print(np.dot(A, B))
+# Prime number checker
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+print(is_prime(29))
