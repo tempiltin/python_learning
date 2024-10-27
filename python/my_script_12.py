@@ -1,9 +1,7 @@
-# Bubble Sort
-def bubble_sort(arr):
-    n = len(arr)
-    for i in range(n):
-        for j in range(0, n-i-1):
-            if arr[j] > arr[j+1]:
-                arr[j], arr[j+1] = arr[j+1], arr[j]
-    return arr
-print(bubble_sort([5, 3, 8, 6, 2]))
+# Random password generator
+import random
+import string
+def generate_password(length=12):
+    characters = string.ascii_letters + string.digits + string.punctuation
+    return ''.join(random.choice(characters) for _ in range(length))
+print(generate_password())
